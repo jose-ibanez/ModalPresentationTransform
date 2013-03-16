@@ -16,6 +16,10 @@
 		E29BBDAE16F49CDB0005F320 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E29BBDAD16F49CDB0005F320 /* Default.png */; };
 		E29BBDB016F49CDB0005F320 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E29BBDAF16F49CDB0005F320 /* Default@2x.png */; };
 		E29BBDB216F49CDB0005F320 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E29BBDB116F49CDB0005F320 /* Default-568h@2x.png */; };
+		E29BBDBB16F49D410005F320 /* UIViewController+ModalPresentationTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = E29BBDBA16F49D410005F320 /* UIViewController+ModalPresentationTransform.m */; };
+		E29BBDBD16F49F810005F320 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29BBDBC16F49F810005F320 /* QuartzCore.framework */; };
+		E29BBDC016F4A4C10005F320 /* JIRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29BBDBF16F4A4C10005F320 /* JIRootViewController.m */; };
+		E29BBDC316F4A5340005F320 /* JIModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29BBDC216F4A5340005F320 /* JIModalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,13 @@
 		E29BBDAD16F49CDB0005F320 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		E29BBDAF16F49CDB0005F320 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		E29BBDB116F49CDB0005F320 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E29BBDB916F49D410005F320 /* UIViewController+ModalPresentationTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ModalPresentationTransform.h"; sourceTree = "<group>"; };
+		E29BBDBA16F49D410005F320 /* UIViewController+ModalPresentationTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ModalPresentationTransform.m"; sourceTree = "<group>"; };
+		E29BBDBC16F49F810005F320 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E29BBDBE16F4A4C10005F320 /* JIRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JIRootViewController.h; sourceTree = "<group>"; };
+		E29BBDBF16F4A4C10005F320 /* JIRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JIRootViewController.m; sourceTree = "<group>"; };
+		E29BBDC116F4A5340005F320 /* JIModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JIModalViewController.h; sourceTree = "<group>"; };
+		E29BBDC216F4A5340005F320 /* JIModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JIModalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E29BBDBD16F49F810005F320 /* QuartzCore.framework in Frameworks */,
 				E29BBD9C16F49CDA0005F320 /* UIKit.framework in Frameworks */,
 				E29BBD9E16F49CDA0005F320 /* Foundation.framework in Frameworks */,
 				E29BBDA016F49CDA0005F320 /* CoreGraphics.framework in Frameworks */,
@@ -51,6 +63,7 @@
 		E29BBD8F16F49CDA0005F320 = {
 			isa = PBXGroup;
 			children = (
+				E29BBDB816F49CEB0005F320 /* UIViewController+ModalPresentationTransform */,
 				E29BBDA116F49CDA0005F320 /* ModalPresentationTransform */,
 				E29BBD9A16F49CDA0005F320 /* Frameworks */,
 				E29BBD9916F49CDA0005F320 /* Products */,
@@ -68,6 +81,7 @@
 		E29BBD9A16F49CDA0005F320 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E29BBDBC16F49F810005F320 /* QuartzCore.framework */,
 				E29BBD9B16F49CDA0005F320 /* UIKit.framework */,
 				E29BBD9D16F49CDA0005F320 /* Foundation.framework */,
 				E29BBD9F16F49CDA0005F320 /* CoreGraphics.framework */,
@@ -81,6 +95,10 @@
 				E29BBDAA16F49CDA0005F320 /* JIAppDelegate.h */,
 				E29BBDAB16F49CDA0005F320 /* JIAppDelegate.m */,
 				E29BBDA216F49CDA0005F320 /* Supporting Files */,
+				E29BBDBE16F4A4C10005F320 /* JIRootViewController.h */,
+				E29BBDBF16F4A4C10005F320 /* JIRootViewController.m */,
+				E29BBDC116F4A5340005F320 /* JIModalViewController.h */,
+				E29BBDC216F4A5340005F320 /* JIModalViewController.m */,
 			);
 			path = ModalPresentationTransform;
 			sourceTree = "<group>";
@@ -97,6 +115,15 @@
 				E29BBDB116F49CDB0005F320 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E29BBDB816F49CEB0005F320 /* UIViewController+ModalPresentationTransform */ = {
+			isa = PBXGroup;
+			children = (
+				E29BBDB916F49D410005F320 /* UIViewController+ModalPresentationTransform.h */,
+				E29BBDBA16F49D410005F320 /* UIViewController+ModalPresentationTransform.m */,
+			);
+			path = "UIViewController+ModalPresentationTransform";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +194,9 @@
 			files = (
 				E29BBDA816F49CDA0005F320 /* main.m in Sources */,
 				E29BBDAC16F49CDA0005F320 /* JIAppDelegate.m in Sources */,
+				E29BBDBB16F49D410005F320 /* UIViewController+ModalPresentationTransform.m in Sources */,
+				E29BBDC016F4A4C10005F320 /* JIRootViewController.m in Sources */,
+				E29BBDC316F4A5340005F320 /* JIModalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

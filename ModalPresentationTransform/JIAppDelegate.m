@@ -7,14 +7,26 @@
 //
 
 #import "JIAppDelegate.h"
+#import "JIRootViewController.h"
+#import "UIViewController+ModalPresentationTransform.h"
 
 @implementation JIAppDelegate
+
++ (void)initialize {
+    [super initialize];
+    
+    [UIViewController setAffineTransformForModalPresentation:CGAffineTransformMakeScale(0.9, 0.9)];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    
+    JIRootViewController *vc = [[JIRootViewController alloc] initWithNibName:nil bundle:nil];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = nav;
+    
+    self.window.backgroundColor = [UIColor blackColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
