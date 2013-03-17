@@ -46,7 +46,7 @@ static dispatch_once_t _swizzleToken;
 - (void)customPresentViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)flag completion:(void (^)(void))completion {
     [UIView animateWithDuration:flag ? kAnimationDuration : 0.0
                      animations:^{
-                         self.view.window.rootViewController.view.layer.transform = _transform;
+                         [UIApplication sharedApplication].keyWindow.rootViewController.view.layer.transform = _transform;
                      }];
     
     [self customPresentViewController:viewControllerToPresent animated:flag completion:completion];
@@ -55,7 +55,7 @@ static dispatch_once_t _swizzleToken;
 - (void)customDismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion {
     [UIView animateWithDuration:flag ? kAnimationDuration : 0.0
                      animations:^{
-                         self.view.window.rootViewController.view.layer.transform = CATransform3DIdentity;
+                         [UIApplication sharedApplication].keyWindow.rootViewController.view.layer.transform = CATransform3DIdentity;
                      }];
     
     [self customDismissViewControllerAnimated:flag completion:completion];
